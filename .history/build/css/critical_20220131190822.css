@@ -1,0 +1,29 @@
+:root {}
+
+
+
+
+.flex-container {
+    min-width: 1920px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    min-width: 1180px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+
+
+.video .video__item {
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}

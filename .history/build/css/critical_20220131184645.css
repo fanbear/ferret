@@ -1,0 +1,11 @@
+:root {}
+
+
+
+
+.flex-container {
+    min-width: 1180px;
+    display: flex;
+    height: auto;
+    margin: 0 auto;
+}

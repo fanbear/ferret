@@ -1,0 +1,14 @@
+.main-title {
+    height: 90px;
+    width: 100%;
+    background-color: #4d5868;
+}
+
+.main-title {
+    display: flex;
+    align-items: center;
+}
+
+.main-title__text {
+    font-size: 2.4em;
+}

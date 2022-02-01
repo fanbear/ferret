@@ -1,0 +1,26 @@
+:root {}
+
+
+
+
+.flex-container {
+    min-width: 1920px;
+    display: flex;
+    height: auto;
+}
+
+.flex-row {
+    min-width: 1180px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+
+
+
+
+.video .video__item {
+    width: 1920px;
+    height: auto;
+}

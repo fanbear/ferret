@@ -1,0 +1,9 @@
+--- Home page
+    -- Video block
+    -- Porfolio
+    -- About company
+    -- Blog slider
+    -- Footer
+    -- Header menu
+
+    --- 6:28
