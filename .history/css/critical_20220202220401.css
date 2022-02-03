@@ -174,12 +174,10 @@ a {
 /* Хлебные крошки */
 .breadcrumbs {
     margin: 27px 0;
-
 }
 
 .breadcrumbs ul {
     display: flex;
-    padding: 0;
 }
 
 .breadcrumbs ul li {
@@ -333,42 +331,35 @@ a {
 
 /* Страница про компанию ---------------
 --------------------------------------- */
-.about__head {
+.about__page {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding: 330px 0 428px 0;
 }
 
-.about__head-title h1 {
+.about__page-title h1 {
     font-size: 1em;
     display: flex;
     flex-direction: column;
 }
 
 
-.about__head-title h1 span {
+.about__page-title h1 span {
     font-size: 2.9em;
     font-weight: 200;
     color: #4d5868;
 }
 
-.about__head-title h1 strong {
+.about__page-title h1 strong {
     font-size: 3.6em;
     color: #4d5868;
     text-transform: uppercase;
 }
 
-.about__head-title hr {
-    max-width: 65%;
+.about__page-title hr {
+    width: 70%;
     height: 2px;
     background-color: #98b0d2;
-    margin: 37px 0;
-}
-
-.about__head-desc {
-    max-width: 65%;
-    color: #4d5868;
-    font-size: 1.48em;
-    font-weight: 200;
+    margin: 0;
 }

@@ -174,12 +174,10 @@ a {
 /* Хлебные крошки */
 .breadcrumbs {
     margin: 27px 0;
-
 }
 
 .breadcrumbs ul {
     display: flex;
-    padding: 0;
 }
 
 .breadcrumbs ul li {

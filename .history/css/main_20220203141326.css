@@ -625,7 +625,6 @@
 
 .about__map-desc {
     margin-top: -40px;
-    margin-bottom: 150px;
 }
 
 .about__map-desc ul li {
@@ -648,17 +647,10 @@
     width: 22px;
     height: 22px;
     border-radius: 12px;
+    background: #4d5868;
     left: -30px;
 }
 
-.about__map-desc ul li:nth-child(1)::before {
-    background: #4d5868;
-}
+.about__map-desc ul li:nth-child(2) {}
 
-.about__map-desc ul li:nth-child(2)::before {
-    background: #98b0d2;
-}
-
-.about__map-desc ul li:nth-child(3):before {
-    background: #d0d0d0;
-}
+.about__map-desc ul li:nth-child(3) {}
