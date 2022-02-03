@@ -1,0 +1,442 @@
+:root {
+    --desktop-width: 1180px;
+    --table-width: 768px;
+    --mobile-width: 478px;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 14px;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.1;
+    background: white;
+
+}
+
+div {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.flex-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    width: var(--desktop-width);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center !important;
+}
+
+.main__header {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    padding: 15px 0;
+    background-color: transparent;
+}
+
+/* Шапка сайта ----------------------
+-------------------------------------*/
+.header__wrapper-logo {
+    display: flex;
+    max-width: 180px;
+    margin-bottom: 10px;
+}
+
+.header__wrapper-logo img {
+    object-fit: cover;
+}
+
+.main__header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header__wrapper-menu ul {
+    display: flex;
+    margin: 0;
+}
+
+.header__wrapper-menu ul li {
+    list-style: none;
+    margin-right: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 2px solid transparent;
+    transition: 0.4s ease-out;
+}
+
+.header__wrapper-menu ul li:hover {
+    border-bottom: 2px solid #8fb2d5;
+    transition: 0.4s ease-in;
+}
+
+.header__wrapper-menu ul li.active {
+    border-bottom: 2px solid #8fb2d5;
+}
+
+.header__wrapper-menu ul li a {
+    font-size: 1.15em;
+    font-weight: 300;
+}
+
+.header__wrapper-actions {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper__actions-language a {
+    font-size: 1.14em;
+    font-weight: 300;
+}
+
+.wrapper__actions-language a.active {
+    font-size: 1.7em;
+    font-weight: 600;
+    color: #8fb2d5;
+}
+
+.wrapper__actions-busket {
+    display: flex;
+}
+
+.wrapper__actions-busket img {
+    margin-right: 5px;
+}
+
+.wrapper__actions-busket span {
+    font-size: 1.7em;
+    border-radius: 5px;
+    width: 30px;
+    height: 26px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-active {
+    background-color: #4d5868;
+    animation: bg-add 0.8s;
+}
+
+.scroll-deactive {
+    background-color: transparent;
+    animation: bg-dell 0.8s;
+}
+
+@keyframes bg-add {
+    0% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: #4d5868;
+    }
+}
+
+@keyframes bg-dell {
+    0% {
+        background-color: #4d5868;
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
+
+/* Хлебные крошки */
+.breadcrumbs {
+    margin: 27px 0;
+
+}
+
+.breadcrumbs ul {
+    display: flex;
+    padding: 0;
+}
+
+.breadcrumbs ul li {
+    margin-right: 30px;
+    position: relative;
+    list-style: none;
+}
+
+.breadcrumbs ul li a {
+    color: #4d5868;
+    font-weight: 200;
+    font-size: 1.48em;
+}
+
+.breadcrumbs ul li span {
+    color: #4d5868;
+    font-weight: 600;
+    font-size: 1.48em;
+}
+
+.breadcrumbs ul li a::before {
+    content: '';
+    background-color: #4d5868;
+    height: 10px;
+    width: 1px;
+    position: absolute;
+    display: block;
+    right: -15px;
+    top: 4px;
+    transform: rotate(-60deg);
+}
+
+.breadcrumbs ul li a::after {
+    content: '';
+    background-color: #4d5868;
+    height: 10px;
+    width: 1px;
+    position: absolute;
+    display: block;
+    right: -15px;
+    bottom: 4px;
+    transform: rotate(60deg);
+}
+
+/* Главная страница --------------------
+----------------------------------------*/
+.video {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.video .video__item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.arrow-down {
+    position: absolute;
+    z-index: 2;
+    bottom: 145px;
+    left: calc(50% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    cursor: pointer;
+}
+
+.arrow-down a {
+    width: 20px;
+    height: 100%;
+}
+
+.arrow-down a span {
+    display: flex;
+    height: 60px;
+    width: 3px;
+    background-color: white;
+    position: relative;
+}
+
+.arrow-down a span::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 15px;
+    width: 3px;
+    bottom: -3px;
+    left: -4px;
+    transform: rotate(-45deg);
+    background-color: white;
+}
+
+.arrow-down a span::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 15px;
+    width: 3px;
+    bottom: -3px;
+    left: 4px;
+    transform: rotate(45deg);
+    background-color: white;
+}
+
+/* Страница бренда --------------------
+----------------------------------------*/
+.brand__header {
+    padding: 216px 0 202px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.brand__header-title h1 {
+    font-size: 2.9em;
+    font-weight: 200;
+    margin: 0 0 25px 0;
+}
+
+.brand__header-title span {
+    display: block;
+    font-weight: 600;
+    font-size: 1.25em;
+}
+
+.brand__header-line {
+    background: #98b0d2;
+    width: 100%;
+    height: 2px;
+    border: 0;
+    margin: 34px 0;
+}
+
+.brand__header-desc p {
+    font-size: 1.48em;
+    font-weight: 200;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.brand__header-desc p:last-child {
+    margin: 0;
+}
+
+/* Страница про компанию ---------------
+--------------------------------------- */
+.about__head {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 330px 0 428px 0;
+}
+
+.about__head-title h1 {
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.about__head-title h1 span {
+    font-size: 2.9em;
+    font-weight: 200;
+    color: #4d5868;
+}
+
+.about__head-title h1 strong {
+    font-size: 3.6em;
+    color: #4d5868;
+    text-transform: uppercase;
+}
+
+.about__head-title hr {
+    max-width: 65%;
+    height: 2px;
+    background-color: #98b0d2;
+    margin: 37px 0;
+}
+
+.about__head-desc {
+    max-width: 65%;
+    color: #4d5868;
+    font-size: 1.48em;
+    font-weight: 200;
+}
+
+/* Страница брендов */
+.head__slider-wrapper {}
+
+.head__slider-item {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1180px !important;
+}
+
+.head__slider-wrapper .slick-prev,
+.head__slider-wrapper .slick-next {
+    position: absolute;
+    background: transparent;
+    border: 0;
+    height: 80px;
+    padding: 0 25px;
+    z-index: 1;
+    cursor: pointer;
+    top: calc(50% - 40px);
+}
+
+.head__slider-wrapper .slick-prev {
+    left: calc((100% - var(--desktop-width)) / 2 - 15px);
+    transform: rotate(180deg);
+}
+
+.head__slider-wrapper .slick-next {
+    right: calc((100% - var(--desktop-width)) / 2 - 15px);
+}
+
+.head__slider-item__title {
+    margin-top: 225px;
+    font-size: 2.9em;
+    display: flex;
+    flex-direction: column;
+    font-weight: 200;
+    margin-bottom: 25px;
+}
+
+.head__slider-item__title span {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.head__slider-wrapper .slick-dots {
+    position: absolute;
+    display: flex !important;
+    bottom: 50px;
+    justify-content: center;
+    left: 0;
+    right: 0;
+}
+
+.head__slider-wrapper .slick-dots li {
+    list-style: none;
+}
+
+.head__slider-wrapper .slick-dots li button {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 26px;
+    height: 26px;
+    margin: 0 12.5px;
+    cursor: pointer;
+}

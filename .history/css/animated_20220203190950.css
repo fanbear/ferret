@@ -1,0 +1,87 @@
+/* Анимация добавление заднего фона на шапке сайте */
+@keyframes bg-add {
+    0% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: #4d5868;
+    }
+}
+
+@keyframes bg-dell {
+    0% {
+        background-color: #4d5868;
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
+
+
+/* Анимация наведения на карточки бренда в шаблоне "all-brand" и "brand" */
+@keyframes product-hover {
+    0% {
+        border-radius: 10px;
+        border: 1px solid #8fb2d5;
+    }
+
+    50% {
+        border-radius: 5px;
+        border: 1px solid #c3dcf5;
+    }
+
+    100% {
+        border-radius: 0;
+        border: 1px solid transparent;
+    }
+}
+
+@keyframes product-unhover {
+    0% {
+        border-radius: 0;
+        border: 1px solid transparent;
+    }
+
+    50% {
+        border-radius: 5px;
+        border: 1px solid #c3dcf5;
+    }
+
+    100% {
+        border-radius: 10px;
+        border: 1px solid #8fb2d5;
+    }
+}
+
+@keyframes product-hover-span {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes product-unhover-span {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+/* Анимация появления товара при фильтрации в шаблоне бренда */
+@keyframes product-show {
+    0% {
+        transform: scale(0.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
