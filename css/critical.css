@@ -205,6 +205,161 @@ a {
     transform: rotate(60deg);
 }
 
+/* Простая верхная часть страниц ---------------
+--------------------------------------- */
+.simple__head {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 330px 0 428px 0;
+    position: relative;
+}
+
+.simple__head-title h1 {
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.simple__head-title h1 span {
+    font-size: 2.9em;
+    font-weight: 200;
+    color: #4d5868;
+}
+
+.simple__head-title h1 strong {
+    font-size: 3.6em;
+    color: #4d5868;
+    text-transform: uppercase;
+}
+
+.simple__head-title hr {
+    max-width: 65%;
+    height: 2px;
+    background-color: #98b0d2;
+    margin: 37px 0;
+    border: 0;
+}
+
+.simple__head-desc {
+    max-width: 65%;
+    color: #4d5868;
+    font-size: 1.48em;
+    font-weight: 200;
+}
+
+.simple__head .arrow-down {
+    position: absolute;
+    z-index: 1;
+    bottom: 50px;
+    left: calc(50% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    cursor: pointer;
+}
+
+.simple__head .simple__head-btn {
+    margin-top: 50px;
+    height: 40px;
+    background-color: #8fb1d5;
+    max-width: 360px;
+    border-radius: 20px;
+}
+
+.simple__head .simple__head-btn a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+/* Слайдер категорий, продуктов и тд */
+.head__slider-wrapper {}
+
+.head__slider-item {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1180px !important;
+}
+
+.head__slider-wrapper .slick-prev,
+.head__slider-wrapper .slick-next {
+    position: absolute;
+    background: transparent;
+    border: 0;
+    height: 80px;
+    padding: 0 25px;
+    z-index: 1;
+    cursor: pointer;
+    top: calc(50% - 40px);
+}
+
+.head__slider-wrapper .slick-prev {
+    left: calc((100% - var(--desktop-width)) / 2 - 15px);
+    transform: rotate(180deg);
+}
+
+.head__slider-wrapper .slick-next {
+    right: calc((100% - var(--desktop-width)) / 2 - 15px);
+}
+
+.head__slider-item__title {
+    margin-top: 225px;
+    font-size: 2.9em;
+    display: flex;
+    flex-direction: column;
+    font-weight: 200;
+    margin-bottom: 25px;
+}
+
+.head__slider-item__title span {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.head__slider-wrapper .slick-dots {
+    position: absolute;
+    display: flex !important;
+    bottom: 50px;
+    justify-content: center;
+    left: 0;
+    right: 0;
+}
+
+.head__slider-wrapper .slick-dots li {
+    list-style: none;
+}
+
+.head__slider-wrapper .slick-dots li button {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 26px;
+    height: 26px;
+    margin: 0 12.5px;
+    cursor: pointer;
+    font-size: 0;
+    position: relative;
+}
+
+.head__slider-wrapper .slick-dots li.slick-active button::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    display: block;
+    z-index: 1;
+    background: white;
+    border-radius: 5px;
+    top: 2px;
+    left: 2px;
+}
+
 /* Главная страница --------------------
 ----------------------------------------*/
 .video {
@@ -312,126 +467,23 @@ a {
     margin: 0;
 }
 
-/* Страница про компанию ---------------
---------------------------------------- */
-.about__head {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 330px 0 428px 0;
+
+/* Трейнинг центр страница ---------------
+------------------------------------------*/
+
+.training__head {
+    background-position: top;
+    padding: 330px 0;
 }
 
-.about__head-title h1 {
-    font-size: 1em;
-    display: flex;
-    flex-direction: column;
+.training__head h1 span {
+    color: white;
 }
 
-.about__head-title h1 span {
-    font-size: 2.9em;
-    font-weight: 200;
-    color: #4d5868;
+.training__head h1 strong {
+    color: #8fb1d5;
 }
 
-.about__head-title h1 strong {
-    font-size: 3.6em;
-    color: #4d5868;
-    text-transform: uppercase;
-}
-
-.about__head-title hr {
-    max-width: 65%;
-    height: 2px;
-    background-color: #98b0d2;
-    margin: 37px 0;
-}
-
-.about__head-desc {
-    max-width: 65%;
-    color: #4d5868;
-    font-size: 1.48em;
-    font-weight: 200;
-}
-
-/* Страница брендов */
-.head__slider-wrapper {}
-
-.head__slider-item {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 1180px !important;
-}
-
-.head__slider-wrapper .slick-prev,
-.head__slider-wrapper .slick-next {
-    position: absolute;
-    background: transparent;
-    border: 0;
-    height: 80px;
-    padding: 0 25px;
-    z-index: 1;
-    cursor: pointer;
-    top: calc(50% - 40px);
-}
-
-.head__slider-wrapper .slick-prev {
-    left: calc((100% - var(--desktop-width)) / 2 - 15px);
-    transform: rotate(180deg);
-}
-
-.head__slider-wrapper .slick-next {
-    right: calc((100% - var(--desktop-width)) / 2 - 15px);
-}
-
-.head__slider-item__title {
-    margin-top: 225px;
-    font-size: 2.9em;
-    display: flex;
-    flex-direction: column;
-    font-weight: 200;
-    margin-bottom: 25px;
-}
-
-.head__slider-item__title span {
-    margin-top: 15px;
-    font-weight: bold;
-}
-
-.head__slider-wrapper .slick-dots {
-    position: absolute;
-    display: flex !important;
-    bottom: 50px;
-    justify-content: center;
-    left: 0;
-    right: 0;
-}
-
-.head__slider-wrapper .slick-dots li {
-    list-style: none;
-}
-
-.head__slider-wrapper .slick-dots li button {
-    background: transparent;
-    border: 1px solid white;
-    border-radius: 5px;
-    width: 26px;
-    height: 26px;
-    margin: 0 12.5px;
-    cursor: pointer;
-    font-size: 0;
-    position: relative;
-}
-
-.head__slider-wrapper .slick-dots li.slick-active button::before {
-    content: '';
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    display: block;
-    z-index: 1;
-    background: white;
-    border-radius: 5px;
-    top: 2px;
-    left: 2px;
+.training__head .simple__head-desc {
+    color: white;
 }

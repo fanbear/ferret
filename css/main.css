@@ -826,3 +826,83 @@
     background: #4d5868;
     animation: product-hover-span 0.8s;
 }
+
+/* Страница тренинга   -----------------
+--------------------------------------- */
+.training__item {
+    margin-bottom: 90px;
+    color: #4d5868;
+    font-weight: 200;
+}
+
+.training__item ul {
+    padding: 20px;
+}
+
+.training__item-title {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 2.3em;
+    color: #98b0d2;
+}
+
+.training__item-desc {
+    font-size: 1.45em;
+}
+
+
+/* Подписаться на рассылку --------------
+-----------------------------------------*/
+.newsletter {
+    background-color: #8fb1d5;
+    padding: 55px 0;
+}
+
+.newsletter__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.newsletter__title {
+    font-size: 1.8em;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 46px;
+}
+
+.newsletter__desc {
+    margin-top: 42px;
+    color: #4d5868;
+    font-weight: 200;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.newsletter form input {
+    border: 0;
+    outline: none;
+}
+
+.newsletter form input:nth-child(1) {
+    height: 40px;
+    min-width: 460px;
+    text-indent: 50px;
+    border-radius: 20px 0 0 20px;
+    font-size: 1.2em;
+}
+
+.newsletter form input:nth-child(2) {
+    height: 42px;
+    min-width: 292px;
+    border-radius: 0 20px 20px 0;
+    background: #4d5868;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    margin-left: -5px;
+}
