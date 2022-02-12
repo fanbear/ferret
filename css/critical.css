@@ -251,7 +251,7 @@ a {
 .simple__head .arrow-down {
     position: absolute;
     z-index: 1;
-    bottom: 50px;
+    bottom: 85px;
     left: calc(50% - 20px);
     display: flex;
     justify-content: center;
@@ -278,8 +278,6 @@ a {
 }
 
 /* Слайдер категорий, продуктов и тд */
-.head__slider-wrapper {}
-
 .head__slider-item {
     background-position: center;
     background-size: cover;
@@ -486,4 +484,181 @@ a {
 
 .training__head .simple__head-desc {
     color: white;
+}
+
+/* Сервисные центры ----------------------
+----------------------------------------*/
+.services__head {
+    background-position: top;
+    padding: 420px 0;
+}
+
+.services__head h1 span {
+    color: white;
+}
+
+.services__head h1 strong {
+    color: #8fb1d5;
+}
+
+.services__head .simple__head-desc {
+    color: white;
+}
+
+/* Страница контактов -------------------
+----------------------------------------*/
+.contact__head-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__head {
+    padding-top: 240px;
+    padding-bottom: 124px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.info__title {
+    font-size: 3em;
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+
+.info__desc {
+    margin-bottom: 45px;
+}
+
+.info__desc p {
+    color: #98b0d2;
+    font-size: 2.1em;
+    font-weight: 600;
+    margin-top: 20px;
+    margin: 0 0 15px 0;
+}
+
+.info__desc a {
+    font-size: 2.6em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.info__desc span {
+    display: block;
+    font-weight: 100;
+    font-size: 1.3em;
+}
+
+.contact__head-info {
+    max-width: 450px;
+}
+
+.info__item p {
+    color: #98b0d2;
+    font-size: 1.45em;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+p.info__item-name {
+    color: white;
+    font-size: 2.3em;
+    font-weight: 500;
+}
+
+.info__item-phone {
+    display: inline-flex;
+    margin-right: 5px;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.info__item-email {
+    font-size: 1.5em;
+    color: #98b0d2;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.info__item {
+    margin-bottom: 40px;
+}
+
+p.info__item-location {
+    margin-top: 8px;
+    font-weight: 1.2em;
+    font-weight: 100;
+    color: white;
+}
+
+.contact__head-form {
+    width: calc(100% - 450px - 80px);
+}
+
+.contact__head-form form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact__head-form form input {
+    width: 300px;
+    height: 40px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #98b0d2;
+    outline: none;
+    color: white;
+    margin-bottom: 115px;
+}
+
+.contact__head-form form input::placeholder {
+    color: #98b0d2;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contact__head-form form select {
+    width: 300px;
+    height: 43px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #98b0d2;
+    color: #98b0d2;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contact__head-form form textarea {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #98b0d2;
+    color: white;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contact__head-form form textarea::placeholder {
+    color: #98b0d2;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contact__head-form form button {
+    width: 100%;
+    height: 58px;
+    background: #98b0d2;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2.5em;
+    font-weight: 500;
+    border: 0;
+    margin-top: 95px;
 }

@@ -836,7 +836,7 @@
 }
 
 .training__item ul {
-    padding: 20px;
+    padding: 0 0 0 20px;
 }
 
 .training__item-title {
@@ -850,6 +850,43 @@
     font-size: 1.45em;
 }
 
+
+/* Страница сервисныого центра --------------
+------------------------------------------ */
+.services__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+    margin-top: 40px;
+}
+
+.services__item {
+    width: calc(100% / 2 - 30px);
+}
+
+.services__item-title {
+    font-size: 2.3em;
+    color: #98b0d2;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.services__item-desc {
+    font-size: 1.45em;
+    color: #4d5868;
+    font-weight: 200;
+}
+
+.services__line {
+    width: 100%;
+    background: #98b0d2;
+    height: 2px;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    border: 0;
+}
 
 /* Подписаться на рассылку --------------
 -----------------------------------------*/
@@ -905,4 +942,63 @@
     color: white;
     cursor: pointer;
     margin-left: -5px;
+}
+
+/* Страница контактов --------------------
+----------------------------------------- */
+.contact__body {
+    margin-bottom: 65px;
+}
+
+.contact__body-title {
+    font-size: 3em;
+    color: #98b0d2;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.contact__body-address {
+    display: flex;
+    margin-bottom: 65px;
+}
+
+.contact__body-address__title {
+    flex: 1 0 24%;
+    font-size: 1.45em;
+    color: #98b0d2;
+    font-weight: 500;
+}
+
+.contact__body-address__text {
+    font-size: 1.45em;
+    font-weight: 100;
+    color: #4d5868;
+    flex: 1 0 52%;
+}
+
+.contact__body-address__info p {
+    font-size: 1.45em;
+    color: #98b0d2;
+    font-weight: 600;
+    margin: 0;
+}
+
+.contact__body-address__info a {
+    font-size: 1.45em;
+    color: #4d5868;
+    display: flex;
+    margin-top: 11px;
+}
+
+.contact__body-address__info a:nth-child(3) {
+    color: #98b0d2;
+    text-decoration: underline;
+}
+
+.contact-line {
+    width: 100%;
+    height: 2px;
+    background: #98b0d2;
+    border: 0;
+    margin: 0;
 }
