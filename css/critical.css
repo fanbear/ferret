@@ -662,3 +662,13 @@ p.info__item-location {
     border: 0;
     margin-top: 95px;
 }
+
+/* Страница товара -----------------------
+----------------------------------------*/
+#product {
+    margin-top: 60px;
+}
+
+#product .head__slider-item {
+    height: 667px !important;
+}

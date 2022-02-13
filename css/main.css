@@ -1002,3 +1002,197 @@
     border: 0;
     margin: 0;
 }
+
+/* Страница продукта */
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start
+}
+
+.product figure {
+    margin: 0;
+    display: flex;
+}
+
+.woocommerse-images {
+    width: 170px;
+}
+
+.woocommerce-product {
+    width: calc(100% - 170px - 465px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.woocommerse-images__active {
+    border: 2px solid #98b0d2;
+
+}
+
+.woocommerce-product figure img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.summary {
+    width: 465px;
+    color: #4d5868;
+}
+
+.summary p {
+    margin: 0;
+}
+
+.summary h1 {
+
+    font-size: 2.7em;
+    margin-bottom: 46px;
+}
+
+.summary .product__price-plus {
+    font-size: 1.8em;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.product__price {
+    display: flex;
+}
+
+.product__price .woocommerce-Price-amount {
+    font-size: 3.5em;
+    color: black;
+    font-weight: 600;
+}
+
+.product__price .woocommerce-Price-currencySymbol {
+    font-size: 2.2em;
+    color: black;
+}
+
+.summary .product__attribute {
+    font-size: 1.75em;
+    margin-top: 15px;
+}
+
+.summary .quantity {
+    height: 0;
+    opacity: 0;
+    position: relative;
+    z-index: -1;
+}
+
+.summary .cart {
+    margin-top: 37px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.summary .cart button {
+    width: 361px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.summary .cart button:nth-child(2) {
+    margin-bottom: 10px;
+    background-color: #b60c0c;
+}
+
+.summary .cart button:nth-child(3) {
+    margin-bottom: 15px;
+    background-color: #98b0d2;
+}
+
+.product__delivery {
+    font-size: 1.2em;
+    color: #4d5868;
+    font-weight: 100;
+    padding-left: 118px;
+}
+
+.product__share-art {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 28px;
+    height: 30px;
+}
+
+.product__share-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    width: 125px;
+}
+
+.product__share-btn i {
+    font-size: 2.3em;
+    color: #4d5868;
+    margin-right: 13px;
+}
+
+.product__share-btn span {
+    font-size: 1.2em;
+    color: #4d5868;
+    font-weight: 100;
+}
+
+.product__share-elem {
+    display: none;
+    transform: scale(0);
+}
+
+.product__share-elem a {
+    display: flex;
+    margin-left: 15px;
+}
+
+.product__share-elem a i {
+    font-size: 1.8em;
+    color: #4d5868;
+}
+
+.product__share-btn__hide {
+    animation: product-btn-hide 0.4s;
+}
+
+.product__share-elem__show {
+    animation: product-btn-elem-show 0.4s;
+    transform: scale(1);
+}
+
+.product__art {
+    font-size: 1.2em;
+    color: black;
+}
+
+.product__description {
+    margin-top: 23px;
+    margin-bottom: 100px;
+    border-top: 2px solid #98b0d2;
+}
+
+.product__description h4 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #4d5868;
+    font-size: 1.75em;
+    font-weight: 500;
+}
+
+.product__description p {
+    color: #4d5868;
+    font-size: 1.2em;
+    font-weight: 100;
+}

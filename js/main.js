@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // **********************************************
     const header = document.querySelector('.main__header');
     const aboutCompanyPage = document.querySelector('.about__head');
+    const product = document.querySelector('#product');
     let scrollpos = window.scrollY;
 
     const add_class_on_scroll = () => {
@@ -14,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
         header.classList.remove('scroll-active')
         header.classList.add('scroll-deactive')
     }
-    if (aboutCompanyPage) {
+    if (aboutCompanyPage || product) {
         add_class_on_scroll()
     } else {
         window.addEventListener('scroll', function () {
@@ -132,4 +133,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     }
+
+
+    // Страница продукта ---------------------
+    //----------------------------------------
+    const prodcutShare = document.querySelector('.product__share-btn');
+    const productShareElem = document.querySelector('.product__share-elem');
+
+    prodcutShare.addEventListener('click', function () {
+        prodcutShare.classList.add('product__share-btn__hide');
+        productShareElem.style.display = 'flex';
+
+        setTimeout(function () {
+            prodcutShare.style.display = 'none';
+            productShareElem.classList.add('product__share-elem__show');
+        }, 380)
+    })
 })
