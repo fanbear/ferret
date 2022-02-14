@@ -51,4 +51,14 @@
 
     --- 1:31
 
----- Время верстки 
+--- Product page
+    --- slider
+    --- Main product section
+        --- images
+        --- main img
+        --- button
+        --- share button
+
+    --- 2:38
+
+---- Время верстки 29:30

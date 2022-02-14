@@ -152,6 +152,39 @@ a {
     animation: bg-dell 0.8s;
 }
 
+.secondary__head-wrapper {
+    background: #98b0d2;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 95px;
+    z-index: 999;
+}
+
+.secondary__head-wrapper ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin: 0;
+}
+
+.secondary__head-wrapper ul li {
+    list-style: none;
+}
+
+.secondary__head-wrapper ul li a {
+    color: #4d5868;
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+.secondary__head-wrapper__active a {
+    text-decoration: underline;
+    color: white !important;
+}
+
 /* Хлебные крошки */
 .breadcrumbs {
     margin: 27px 0;
@@ -666,7 +699,7 @@ p.info__item-location {
 /* Страница товара -----------------------
 ----------------------------------------*/
 #product {
-    margin-top: 60px;
+    margin-top: 144px;
 }
 
 #product .head__slider-item {

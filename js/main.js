@@ -140,13 +140,27 @@ document.addEventListener('DOMContentLoaded', function () {
     const prodcutShare = document.querySelector('.product__share-btn');
     const productShareElem = document.querySelector('.product__share-elem');
 
-    prodcutShare.addEventListener('click', function () {
-        prodcutShare.classList.add('product__share-btn__hide');
-        productShareElem.style.display = 'flex';
+    if (prodcutShare) {
+        prodcutShare.addEventListener('click', function () {
+            prodcutShare.classList.add('product__share-btn__hide');
+            productShareElem.style.display = 'flex';
 
-        setTimeout(function () {
-            prodcutShare.style.display = 'none';
-            productShareElem.classList.add('product__share-elem__show');
-        }, 380)
-    })
+            setTimeout(function () {
+                prodcutShare.style.display = 'none';
+                productShareElem.classList.add('product__share-elem__show');
+            }, 380)
+        })
+    }
+
+    //Страница категорий ------------------------
+    //-------------------------------------------
+    const filterItem = document.querySelector('.category__filter-wrapper');
+
+    if (filterItem) {
+        filterItem.addEventListener('click', function (e) {
+            const target = e.target.closest('.category__filter-item');
+
+            target.classList.toggle('filter-item-opened');
+        })
+    }
 })
