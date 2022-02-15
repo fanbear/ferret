@@ -61,4 +61,14 @@
 
     --- 2:38
 
----- Время верстки 29:30
+
+--- Category page
+    --- header slider
+    --- filter + scripts
+    --- product cart
+    --- product desc
+
+    --- 3:17
+
+
+---- Время верстки 32:47

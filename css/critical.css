@@ -705,3 +705,64 @@ p.info__item-location {
 #product .head__slider-item {
     height: 667px !important;
 }
+
+
+/* Страница новостей ------------------ 
+-----------------------------------------*/
+.news {
+    margin-top: 90px;
+}
+
+.news__title {
+    font-size: 2.3em;
+    color: #98b0d2;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.news__first-half__desct {
+    color: #4d5868;
+    font-size: 1.45em;
+    margin-bottom: 40px;
+    font-weight: 100;
+}
+
+.news__banner {
+    min-height: 554px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: flex;
+    align-items: center;
+}
+
+.news__banner-title {
+    font-size: 3em;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.news__banner-desc {
+    font-size: 1.45em;
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.news__banner-button {
+    display: flex;
+    justify-content: center;
+}
+
+.news__banner-button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 206px;
+    height: 46px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
