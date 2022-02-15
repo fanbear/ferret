@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const header = document.querySelector('.main__header');
     const aboutCompanyPage = document.querySelector('.about__head');
     const product = document.querySelector('#product');
-    const news = document.querySelector('.news')
+    const news = document.querySelector('.news');
+    const article = document.querySelector('.article')
     let scrollpos = window.scrollY;
 
     const add_class_on_scroll = () => {
@@ -16,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
         header.classList.remove('scroll-active')
         header.classList.add('scroll-deactive')
     }
-    if (aboutCompanyPage || product || news) {
+    if (aboutCompanyPage || product || news || article) {
         add_class_on_scroll()
     } else {
         window.addEventListener('scroll', function () {

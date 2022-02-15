@@ -1380,6 +1380,8 @@
     font-weight: 600;
     margin-top: 20px;
     margin-bottom: 15px;
+    min-height: 70px;
+    overflow-y: hidden;
 }
 
 .product__article {
@@ -1525,4 +1527,57 @@
     padding-top: 15px;
     border-top: 2px solid #98b0d2;
     margin-bottom: 100px;
+}
+
+/* Страница новость --------------------
+---------------------------------------- */
+.article__second-half__desct {
+    font-size: 1.45em;
+    color: #4d5868;
+    font-weight: 100;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #98b0d2;
+    margin-bottom: 20px;
+}
+
+.articles__upcoming {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.articles__upcoming-prev,
+.articles__upcoming-next {
+    color: #4d5868;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.articles__upcoming-prev .btn-arrow {
+    background: #4d5868;
+    transform: rotate(180deg);
+    margin: 0 15px 0 0;
+}
+
+.articles__upcoming-next .btn-arrow {
+    background: #4d5868;
+}
+
+.article__product-wrapper {
+    margin-bottom: 60px;
+}
+
+.article__product-wrapper .products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.article__product-wrapper .product {
+    width: calc(100% / 4 - 20px);
+    margin-bottom: 50px;
 }

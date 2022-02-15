@@ -766,3 +766,89 @@ p.info__item-location {
     border: 1px solid white;
     border-radius: 10px;
 }
+
+/* Страница новость ------------------
+------------------------------------- */
+.article {
+    margin-top: 90px;
+}
+
+.article__title {
+    font-size: 2.3em;
+    color: #98b0d2;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.article__first-half__desct {
+    color: #4d5868;
+    font-size: 1.45em;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+.article__slider-item img {
+    width: 100%;
+    height: auto;
+}
+
+.article__slider .slick-prev,
+.article__slider .slick-next {
+    position: absolute;
+    background: transparent;
+    border: 0;
+    height: 80px;
+    padding: 0 25px;
+    z-index: 1;
+    cursor: pointer;
+    top: calc(50% - 40px);
+
+}
+
+.article__slider .slick-prev {
+    left: calc((100% - var(--desktop-width)) / 2 - 15px);
+    transform: rotate(180deg);
+}
+
+.article__slider .slick-next {
+    right: calc((100% - var(--desktop-width)) / 2 - 15px);
+    cursor: pointer;
+}
+
+.article__slider .slick-dots {
+    position: absolute;
+    display: flex !important;
+    bottom: 50px;
+    justify-content: center;
+    left: 0;
+    right: 0;
+}
+
+.article__slider .slick-dots li {
+    list-style: none;
+}
+
+.article__slider .slick-dots li button {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 26px;
+    height: 26px;
+    margin: 0 12.5px;
+    cursor: pointer;
+    font-size: 0;
+    position: relative;
+}
+
+.article__slider .slick-dots li.slick-active button::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    display: block;
+    z-index: 1;
+    background: white;
+    border-radius: 5px;
+    top: 2px;
+    left: 2px;
+}

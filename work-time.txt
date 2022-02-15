@@ -70,5 +70,21 @@
 
     --- 3:17
 
+--- News page
+    --- News title
+    --- News first article
+    --- News all article
+    --- News desc
 
----- Время верстки 32:47
+    --- 0:58
+
+--- Article page
+    --- Article title
+    --- Article slider
+    --- Article desc
+    --- Article link
+    --- Article product
+
+    --- 1:02
+
+---- Время верстки 34ч
