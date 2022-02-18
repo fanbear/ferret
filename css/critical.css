@@ -205,6 +205,10 @@ ul {
     transform: scale(0);
 }
 
+.wrapper__actions-menu {
+    display: none;
+}
+
 @media screen and (max-width: 478.98px) {
     .main__header-wrapper {
         justify-content: flex-start;
