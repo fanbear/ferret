@@ -16,8 +16,8 @@
     -- 8:17м
 
 --- About page
-    -- header section
-    -- body section
+    -- Header section
+    -- Body section
         - title
         - map
         - desc
@@ -25,34 +25,34 @@
     -- 2:33м
 
 --- All brands page
-    -- header slider
-    -- brands hard slider
-    -- brands grid
+    -- Header slider
+    -- Brands hard slider
+    -- Brands grid
 
     --- 5:12м
 
 --- Trainig page
-    --- simple header
-    --- content section
-    --- newsletter
+    --- Simple header
+    --- Content section
+    --- Newsletter
 
     --- 1:16
 
 --- Services page
-    --- simple header
-    --- content section
+    --- Simple header
+    --- Content section
 
     --- 0:44
 
 --- Contact page
-    --- simple head + form
-    --- content section
-    --- map
+    --- Simple head + form
+    --- Content section
+    --- Map
 
     --- 1:31
 
 --- Product page
-    --- slider
+    --- Slider
     --- Main product section
         --- images
         --- main img
@@ -63,10 +63,10 @@
 
 
 --- Category page
-    --- header slider
-    --- filter + scripts
-    --- product cart
-    --- product desc
+    --- Header slider
+    --- Filter + scripts
+    --- Product cart
+    --- Product desc
 
     --- 3:17
 
@@ -86,5 +86,18 @@
     --- Article product
 
     --- 1:02
+
+
+--- Adaptive mobile
+    --- Header
+    --- Menu
+    --- Footer
+    --- Brnads page
+    --- Main page
+    --- News page
+        -- js show/hide more news item
+
+
+    --- 4:30
 
 ---- Время верстки 34ч

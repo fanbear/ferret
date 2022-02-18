@@ -1,11 +1,11 @@
 :root {
     --desktop-width: 1180px;
-    --table-width: 768px;
-    --mobile-width: 478px;
 }
 
 html, body {
     scroll-behavior: smooth;
+    width: auto;
+    height: 100%;
 }
 
 body {
@@ -28,6 +28,11 @@ a {
     text-decoration: none;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 .flex-container {
     width: 100%;
     display: flex;
@@ -35,7 +40,7 @@ a {
 }
 
 .flex-row {
-    width: var(--desktop-width);
+    width: 1180px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -48,6 +53,18 @@ a {
     justify-content: center !important;
 }
 
+@media screen and (max-width: 478.98px) {
+    .flex-row {
+        width: 100%;
+    }
+
+    :root {
+        --desktop-width: 400px;
+    }
+}
+
+/* Шапка сайта ----------------------
+-------------------------------------*/
 .main__header {
     position: fixed;
     top: 0;
@@ -57,8 +74,6 @@ a {
     background-color: transparent;
 }
 
-/* Шапка сайта ----------------------
--------------------------------------*/
 .header__wrapper-logo {
     display: flex;
     max-width: 180px;
@@ -185,6 +200,102 @@ a {
     color: white !important;
 }
 
+.header__wrapper-menu__mobile {
+    display: none;
+    transform: scale(0);
+}
+
+@media screen and (max-width: 478.98px) {
+    .main__header-wrapper {
+        justify-content: flex-start;
+    }
+
+    .header__wrapper-actions {
+        width: 100%;
+        margin-left: 30px;
+    }
+
+    .header__wrapper-menu {
+        display: none;
+    }
+
+    .header__wrapper-logo img {
+        width: 130px;
+        height: auto;
+    }
+
+    .wrapper__actions-search {
+        display: none;
+    }
+
+    .wrapper__actions-menu {
+        display: flex;
+    }
+
+    .wrapper__actions-menu i {
+        font-size: 30px;
+        color: #98b0d2;
+    }
+
+    .menu__mobile-active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 10000;
+        background: #4d5868;
+        display: flex;
+        flex-direction: column;
+        transform: scale(1);
+        animation: menu-mobile-open 0.4s;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .menu__mobile-close {
+        font-weight: 600;
+        font-size: 1.4em;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .menu__mobile-active ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu__mobile-active ul li {
+        font-size: 1.4em;
+        margin-bottom: 10px;
+        list-style: none;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        border-bottom: 2px solid transparent;
+        transition: 0.4s ease-out;
+    }
+
+    .menu__mobile-active ul li.active {
+        border-bottom: 2px solid #8fb2d5;
+    }
+
+    @keyframes menu-mobile-open {
+        0% {
+            transform: scale(0);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+}
+
 /* Хлебные крошки */
 .breadcrumbs {
     margin: 27px 0;
@@ -236,6 +347,26 @@ a {
     right: -15px;
     bottom: 4px;
     transform: rotate(60deg);
+}
+
+@media screen and (max-width: 478.98px) {
+    .breadcrumbs ul li a {
+        font-size: 0.96em;
+    }
+
+    .breadcrumbs ul li span {
+        font-size: 0.96em;
+    }
+
+    .breadcrumbs ul li a::after {
+        height: 6px;
+        bottom: 3px;
+    }
+
+    .breadcrumbs ul li a::before {
+        height: 6px;
+        top: 3px;
+    }
 }
 
 /* Простая верхная часть страниц ---------------
@@ -456,6 +587,23 @@ a {
     left: 4px;
     transform: rotate(45deg);
     background-color: white;
+}
+
+@media screen and (max-width: 478.98px) {
+    .video {
+        min-height: 200px;
+        margin-top: 80px;
+    }
+
+    .video .video__item {
+        width: 100%;
+        height: auto;
+        max-height: 100%;
+    }
+
+    .video .arrow-down {
+        display: none;
+    }
 }
 
 /* Страница бренда --------------------
@@ -718,6 +866,7 @@ p.info__item-location {
     color: #98b0d2;
     margin-bottom: 25px;
     text-transform: uppercase;
+    max-width: 60%;
 }
 
 .news__first-half__desct {
@@ -749,7 +898,8 @@ p.info__item-location {
     font-size: 1.45em;
     color: white;
     text-align: center;
-    margin-bottom: 25px;
+    margin: 0 auto 25px auto;
+    max-width: 60%;
 }
 
 .news__banner-button {
@@ -767,6 +917,26 @@ p.info__item-location {
     border-radius: 10px;
 }
 
+@media screen and (max-width: 478.98px) {
+    .news__title {
+        font-size: 1.5em;
+        max-width: 100%;
+    }
+
+    .news__first-half__desct {
+        font-size: 0.98em;
+    }
+
+    .news__banner-title {
+        font-size: 1.8em
+    }
+
+    .news__banner-desc {
+        font-size: 0.95em;
+        max-width: 100%;
+    }
+}
+
 /* Страница новость ------------------
 ------------------------------------- */
 .article {
@@ -778,6 +948,7 @@ p.info__item-location {
     color: #98b0d2;
     margin-bottom: 25px;
     text-transform: uppercase;
+    max-width: 80%;
 }
 
 .article__first-half__desct {
@@ -851,4 +1022,33 @@ p.info__item-location {
     border-radius: 5px;
     top: 2px;
     left: 2px;
+}
+
+@media screen and (max-width: 478.98px) {
+    .article__title {
+        width: 100%;
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+
+    .article__first-half__desct {
+        font-size: 0.95em;
+    }
+
+    .article__slider-item img {
+        height: 310px;
+        width: auto;
+    }
+
+    .article__slider .slick-next {
+        right: calc((100% - var(--desktop-width)) / 2);
+    }
+
+    .article__slider .slick-prev {
+        left: calc((100% - var(--desktop-width)) / 2);
+    }
+
+    .article__slider .slick-dots {
+        bottom: 15px;
+    }
 }

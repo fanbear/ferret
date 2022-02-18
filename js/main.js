@@ -1,12 +1,33 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    const windowWidth = window.innerWidth;
+
+    // Шапка сайта ---------------------------------------------------
+    //----------------------------------------------------------------
+
+    // ------- Мобильное меню сайта
+    const mobileMenuBtnOpen = document.querySelector('.wrapper__actions-menu');
+    const mobileMenuList = document.querySelector('.header__wrapper-menu__mobile');
+    const mobileMenuBtnClose = document.querySelector('.menu__mobile-close');
+
+    if (mobileMenuBtnOpen) {
+        mobileMenuBtnOpen.addEventListener('click', function () {
+            mobileMenuList.classList.toggle('menu__mobile-active')
+        })
+    }
+    if (mobileMenuBtnClose) {
+        mobileMenuBtnClose.addEventListener('click', function () {
+            mobileMenuList.classList.toggle('menu__mobile-active')
+        })
+    }
+
     // Добавление цвета в шапку при прокрутке ******
     // **********************************************
     const header = document.querySelector('.main__header');
     const aboutCompanyPage = document.querySelector('.about__head');
     const product = document.querySelector('#product');
     const news = document.querySelector('.news');
-    const article = document.querySelector('.article')
+    const article = document.querySelector('.article');
     let scrollpos = window.scrollY;
 
     const add_class_on_scroll = () => {
@@ -17,12 +38,14 @@ document.addEventListener('DOMContentLoaded', function () {
         header.classList.remove('scroll-active')
         header.classList.add('scroll-deactive')
     }
-    if (aboutCompanyPage || product || news || article) {
+    if (aboutCompanyPage || product || news || article
+        || windowWidth < 500) {
+
         add_class_on_scroll()
+
     } else {
         window.addEventListener('scroll', function () {
             let scrollpos = window.scrollY;
-
             if (scrollpos >= 1) {
                 add_class_on_scroll()
             } else {
@@ -32,9 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-
-
-    // Фильтр брендов ------------------------
+    // Фильтр брендов в шаблоне brands------------------------
     // -----------------------------------------
     const brandsLink = document.querySelector('.brand__product-filter');
     const productGroup = document.querySelectorAll('.product__group .group__item-product ');
@@ -163,6 +184,54 @@ document.addEventListener('DOMContentLoaded', function () {
             const target = e.target.closest('.category__filter-item');
 
             target.classList.toggle('filter-item-opened');
+        })
+    }
+
+
+    // Подвал сайта --------------------------------------------
+    //----------------------------------------------------------
+    const footerMenu = document.querySelector('.main__footer-menu');
+
+    if (windowWidth && footerMenu) {
+        footerMenu.addEventListener('click', function (e) {
+            const target = e.target.closest('.footer__menu-item');
+
+            target.classList.toggle('footer__menu-item__active');
+        })
+    }
+
+    //Страница новостей ----------------------------------------
+    //----------------------------------------------------------
+    const newsWrapper = document.querySelector('.news__wrapper');
+    const newsItemsHeight = document.querySelectorAll('.news__item');
+    const newsShowMore = document.querySelector('.news__more');
+
+    if (newsWrapper && windowWidth < 500) {
+        let height = 1152;
+        let maxHeight = 0;
+
+        newsItemsHeight.forEach(function (item) {
+            maxHeight += item.offsetHeight;
+        })
+
+        newsWrapper.style.height = height + 'px';
+
+        newsShowMore.addEventListener('click', function () {
+            height += 1152;
+
+            if (height === 1152) {
+                newsShowMore.textContent = '';
+                newsShowMore.insertAdjacentHTML('afterbegin', 'больше новостей <span class="news__arrow news__arrow-down"></span>');
+            }
+            if (maxHeight > height) {
+                newsWrapper.style.height = height + 'px';
+            } else {
+                newsWrapper.style.height = 'auto';
+                height = 0;
+                newsShowMore.textContent = '';
+                newsShowMore.insertAdjacentHTML('afterbegin', 'cкрыть новости <span class="news__arrow news__arrow-up"></span>');;
+            }
+
         })
     }
 })
