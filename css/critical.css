@@ -526,6 +526,16 @@ ul {
     left: 2px;
 }
 
+@media screen and (max-width: 478.98px) {
+    .head__slider-item {
+        height: 770px !important;
+    }
+
+    .head__slider-item__title {
+        margin-top: 150px;
+    }
+}
+
 /* Главная страница --------------------
 ----------------------------------------*/
 .video {
