@@ -493,6 +493,31 @@ ul {
     font-size: 1.2em;
 }
 
+@media screen and (max-width: 478.98px) {
+    .about__head {
+        padding: 200px 0;
+        background-position: 56% 20%;
+    }
+
+    .about__head .simple__head-title h1 span {
+        margin-bottom: 20px;
+        font-weight: 100;
+    }
+
+    .about__head .simple__head-title h1 strong {
+        font-weight: 600;
+    }
+
+    .about__head .simple__head-desc {
+        max-width: 100%;
+    }
+
+    .simple__head-title hr {
+        max-width: 100%;
+    }
+}
+
+
 /* Слайдер категорий, продуктов и тд */
 .head__slider-item {
     background-position: center;

@@ -156,7 +156,6 @@
     background-repeat: no-repeat;
 }
 
-
 .about__wrapper-title {
     font-size: 2.4em;
     font-weight: bold;
@@ -186,6 +185,7 @@
 }
 
 @media screen and (max-width: 478.98px) {
+
     .about__wrapper-text {
         flex: 1 1 100%;
         margin: 0;
@@ -756,6 +756,43 @@
 
 .about__map-desc ul li:nth-child(3):before {
     background: #d0d0d0;
+}
+
+@media screen and (max-width: 478.98px) {
+    .about__body-desc {
+        flex-direction: column;
+    }
+
+    .about__desc-item h2 {
+        font-size: 1.8em;
+    }
+
+    .about__desc-item {
+        margin-bottom: 40px;
+    }
+
+    .about__desc-item p {
+        font-size: 1.3em;
+    }
+
+    .about__map-title {
+        max-width: 100%;
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+
+    .about__map-img img {
+        height: 250px;
+        width: auto;
+    }
+
+    .about__map-desc {
+        margin: 50px 0;
+    }
+
+    .about__map-desc ul {
+        padding-left: 30px;
+    }
 }
 
 /* Страница Брендов компании -------------------
