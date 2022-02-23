@@ -506,6 +506,7 @@ ul {
 
     .about__head .simple__head-title h1 strong {
         font-weight: 600;
+        font-size: 3.4em;
     }
 
     .about__head .simple__head-desc {
@@ -762,6 +763,17 @@ ul {
     color: white;
 }
 
+@media screen and (max-width: 478.98px) {
+    .training__head {
+        padding: 150px 0 250px 0;
+        background-position: 75% 50%;
+    }
+
+    .training__head .simple__head-desc {
+        max-width: 100%;
+    }
+}
+
 /* Сервисные центры ----------------------
 ----------------------------------------*/
 .services__head {
@@ -779,6 +791,20 @@ ul {
 
 .services__head .simple__head-desc {
     color: white;
+}
+
+@media screen and (max-width:478.98px) {
+    .services__head {
+        padding: 150px 0 250px 0;
+    }
+
+    .services__head h1 strong {
+        color: white;
+    }
+
+    .services__head .simple__head-desc {
+        max-width: 100%;
+    }
 }
 
 /* Страница контактов -------------------
