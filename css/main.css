@@ -1216,6 +1216,37 @@
     margin: 0;
 }
 
+@media screen and (max-width: 478.98px) {
+    .contact__body-title {
+        font-size: 2.3em;
+    }
+
+    .contact__body-address {
+        flex-direction: column;
+    }
+
+    .contact__body-address__title {
+        margin-bottom: 14px;
+        font-size: 1.28em;
+    }
+
+    .contact__body-address__text {
+        font-size: 1em;
+        margin-bottom: 25px;
+    }
+
+    .contact__body-address__info p,
+    .contact__body-address__info a {
+        font-size: 1.25em;
+    }
+
+    .contact-map iframe {
+        max-height: 320px;
+        height: 320px;
+        display: flex;
+    }
+}
+
 /* Страница продукта ----------------------------
 -------------------------------------------------*/
 .product {
