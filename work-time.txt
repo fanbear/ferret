@@ -87,12 +87,17 @@
 
     --- 1:02
 
+---- Время верстки 34ч
+
+
 
 --- Adaptive mobile
     --- Header
     --- Menu
+        -- js show/hide mobile menu
     --- Footer
-    --- Brnads page
+        -- js show/hide menu item
+    --- Brands page
     --- Main page
     --- News page
         -- js show/hide more news item
@@ -100,4 +105,3 @@
 
     --- 4:30
 
----- Время верстки 34ч

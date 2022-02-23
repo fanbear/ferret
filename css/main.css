@@ -1411,6 +1411,44 @@
     font-weight: 100;
 }
 
+.h1-mb {
+    display: none;
+}
+
+@media screen and (max-width: 478.98px) {
+    .woocommerse-images {
+        width: 100%;
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    .woocommerce-product {
+        width: 100%;
+        order: -1;
+    }
+
+    .woocommerse-images figure {
+        width: calc(100% / 3);
+    }
+
+    .woocommerse-images figure {
+        object-fit: cover;
+        min-height: 120px;
+        height: 120px;
+    }
+
+    .h1-mb {
+        display: block;
+        font-size: 2.1em;
+        margin-bottom: 46px;
+        color: #4d5868;
+        order: -2;
+    }
+
+    .summary h1 {
+        display: none;
+    }
+}
 
 /* Страница категорий -------------------------
 ----------------------------------------------*/

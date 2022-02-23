@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const mobileMenuBtnOpen = document.querySelector('.wrapper__actions-menu');
     const mobileMenuList = document.querySelector('.header__wrapper-menu__mobile');
     const mobileMenuBtnClose = document.querySelector('.menu__mobile-close');
+    const secondMenu = document.querySelector('.secondary__head-wrapper');
+    const secondMenuBtn = document.querySelector('.secondary__open-mobile');
 
     if (mobileMenuBtnOpen) {
         mobileMenuBtnOpen.addEventListener('click', function () {
@@ -18,6 +20,12 @@ document.addEventListener('DOMContentLoaded', function () {
     if (mobileMenuBtnClose) {
         mobileMenuBtnClose.addEventListener('click', function () {
             mobileMenuList.classList.toggle('menu__mobile-active')
+        })
+    }
+    // ---------- Второстипенное меню в шаблоне продуктов и каталоге
+    if (secondMenuBtn) {
+        secondMenuBtn.addEventListener('click', function () {
+            secondMenu.querySelector('ul').classList.toggle('open');
         })
     }
 

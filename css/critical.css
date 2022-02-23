@@ -209,6 +209,10 @@ ul {
     display: none;
 }
 
+.secondary__open-mobile {
+    display: none;
+}
+
 @media screen and (max-width: 478.98px) {
     .main__header-wrapper {
         justify-content: flex-start;
@@ -298,6 +302,38 @@ ul {
             transform: scale(1);
         }
     }
+
+    .secondary__head-wrapper ul {
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+
+    .secondary__open-mobile {
+        display: flex;
+        position: absolute;
+        right: 30%;
+        top: 20px;
+    }
+
+    .secondary__head-wrapper ul li {
+        display: none;
+    }
+
+    .secondary__head-wrapper ul .secondary__head-wrapper__active {
+        display: block;
+    }
+
+    .secondary__head-wrapper ul.open {
+        background: #98b0d2;
+        height: 100%;
+        padding-bottom: 20px;
+    }
+
+    .secondary__head-wrapper ul.open li {
+        display: flex;
+        margin-top: 10px;
+    }
 }
 
 /* Хлебные крошки */
@@ -354,6 +390,18 @@ ul {
 }
 
 @media screen and (max-width: 478.98px) {
+    .secondary__head-wrapper {
+        top: 81px;
+    }
+
+    .breadcrumbs ul {
+        flex-wrap: wrap;
+    }
+
+    .breadcrumbs ul li {
+        margin-top: 10px;
+    }
+
     .breadcrumbs ul li a {
         font-size: 0.96em;
     }
@@ -533,6 +581,14 @@ ul {
 
     .head__slider-item__title {
         margin-top: 150px;
+    }
+
+    .head__slider-wrapper .slick-next {
+        right: calc((100% - var(--desktop-width)) / 2);
+    }
+
+    .head__slider-wrapper .slick-prev {
+        left: calc((100% - var(--desktop-width)) / 2);
     }
 }
 
@@ -868,6 +924,15 @@ p.info__item-location {
     height: 667px !important;
 }
 
+@media screen and (max-width: 478.98px) {
+    #product {
+        margin-top: 130px;
+    }
+
+    #product .head__slider-item {
+        height: 350px !important;
+    }
+}
 
 /* Страница новостей ------------------ 
 -----------------------------------------*/
